@@ -21,5 +21,9 @@ public class HomePage {
         this.driver = driver;
     }
 
-
+    public Top250Movie openTop250Movie() {
+        menuButton.click();
+        top250MoviesButton.click();
+        return new Top250Movie(driver);
+    }
 }
